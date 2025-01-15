@@ -1,13 +1,10 @@
-import Button from "./Componets/Buttons/Button";
+import TextInputForm from "./Componets/TextInputForm/TextInputForm";
 
 function App(){
   return(
     <div>
-     <h1 className="font-semibold text-3xl">Hello World</h1>
-     <Button text="Primary" buttonType="Submit" styleType="primary" onClickHandler={()=> console.log("primary clicked")}/>
-     <Button text="Secondary" buttonType="Okay" styleType="secondary"onClickHandler={()=> console.log("secondary clicked")}/> 
-     <Button text="warning" buttonType="Okay" styleType="warning" onClickHandler={()=>console.log("warning clicked")}/> 
-      <Button text="error" buttonType="Okay" styleType="error" onClickHandler={()=>console.log("error clicked")}/>
+     <h1 className="font-semibold text-3xl">Welcome to Hangman</h1>
+     <TextInputForm onSubmit={(value)=>console.log("value coming from the hidden form is", value)} />
     </div>
   );
 }
