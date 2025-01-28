@@ -10,12 +10,18 @@ function App(){
     //  <h1 className="font-semibold text-3xl">Welcome to Hangman</h1>
     //  <TextInputFormContainer onSubmit={(value)=>console.log("value coming from the hidden form is", value)} />
     // </div>
+   <>
+   <div>
+    Navbar
+   </div>
+   
     <Routes>
       <Route path="/play" element = {<PlayGame />} />
       <Route path = "/start" element = {<StartGame />}  />
       <Route path = "*" element = {<div>NOT FOUND</div>}  />
 
     </Routes>
+   </>
   );
 }
 

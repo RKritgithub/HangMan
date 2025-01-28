@@ -9,7 +9,7 @@ const [inputType, setInputType] = useState('password');
 function handleFormSubmit(event){
   event.preventDefault();
   console.log("Form is Submitted", value);
-  onSubmit ?. (value); //if onSubmit is defined, call it with the value(state variable);
+  onSubmit?.(value); //if onSubmit is defined, call it with the value(state variable);
 }
 
 function handleTextInputChange(event){
